@@ -47,3 +47,4 @@ if __name__ == '__main__':
     print 'Entered Binary: %s' % number
     print 'Decimal: %s' % decimal
     print
+    hahahaha
