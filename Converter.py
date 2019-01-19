@@ -8,7 +8,15 @@ def DecimalToBinary(decimal):
     return: type string
 
     """
-
+     if decimal >1:
+        while int(decimal/2)!=1:
+            number = int(decimal/2) + decimal%2
+            decimal = int (decimal/2)
+                break
+    print number
+        
+        
+    return ''
         
     return ''
 
@@ -47,3 +55,4 @@ if __name__ == '__main__':
     print 'Entered Binary: %s' % number
     print 'Decimal: %s' % decimal
     print
+    hahahaha
