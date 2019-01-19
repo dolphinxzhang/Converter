@@ -8,17 +8,13 @@ def DecimalToBinary(decimal):
     return: type string
 
     """
-     if decimal >1:
+    if decimal >1:
         while int(decimal/2)!=1:
             number = int(decimal/2) + decimal%2
             decimal = int (decimal/2)
                 break
-    print number
-        
-        
-    return ''
-        
-    return ''
+    return number
+
 
 
 def BinaryToDecimal(binary):
