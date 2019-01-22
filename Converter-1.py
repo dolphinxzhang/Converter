@@ -12,20 +12,20 @@ def DecimalToBinary(decimal):
   """
   result_list= [ ] #binary list
   
-  remainder= int(number) % 2
-  result_list. append(remainder)
+  remainder= int(number) % 2 #the remainder is what we want
+  result_list. append(remainder) #shifts the result list the right way
   quotient = int(number) / 2
     
   while quotient != 0:
     remainder = quotient % 2
     quotient = quotient / 2
-    result_list. append(remainder)
+    result_list. append(remainder) #reads the list backwards
   
   print result_list
   
   result= ' '
   for i in result_list:
-    result=str(i) + result
+    result=str(i) + result #gives the binary number
   
   return result
 
