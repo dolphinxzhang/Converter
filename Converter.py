@@ -1,11 +1,12 @@
 
 def DecimalToBinary(decimal):
+  """
+  Converts a decimal number entered by user
+  into the corresponding binary number.
 
-    #Converts a decimal number entered by user
-    #into the corresponding binary number.
-
-    #decimal: type string
-   # return: type string
+  decimal: type string
+  return: type string
+  """
 
     
     result_list= [ ]
@@ -28,6 +29,7 @@ def DecimalToBinary(decimal):
     return result
 
 
+
 def BinaryToDecimal(binary):
     """
     Converts a binary number entered by user
@@ -44,19 +46,17 @@ def BinaryToDecimal(binary):
     
 
     for i in range(len(number)):   #iterates through every position of the string
-        
-        if number[i] =='1': #if "1" is found on this position 
-            sum+=2**(i) #let 2 take the power of that "1"'s position and add up all the powers of 2 according to the postiion of "1" in the string  
-        else: #if "0" is found
-            pass #add nothing 
+      if number[i] =='1': #if "1" is found on this position 
+        sum+=2**(i) #let 2 take the power of that "1"'s position and add up all the powers of 2 according to the postiion of "1" in the string  
+      else: #if "0" is found
+        pass #add nothing 
     
     results=str(sum) #return results in the form of a string 
-        
+    
     return results
 
     
-
-
+    
 
 if __name__ == '__main__':
     
@@ -67,8 +67,7 @@ if __name__ == '__main__':
     print 'Entered Decimal: %s' % number
     print 'Binary: %s' % binary
     print
-    
-    """
+
     number = raw_input("Enter a binary number to convert to Decimal: ")
     decimal = BinaryToDecimal(number)
 
@@ -76,4 +75,3 @@ if __name__ == '__main__':
     print 'Entered Binary: %s' % number
     print 'Decimal: %s' % decimal
     print
-    """
