@@ -1,3 +1,6 @@
+#Converter.py
+#Cindy Zhang, Crystal Zhu, Joyce Yuan
+#January 21st 2019
 
 def DecimalToBinary(decimal):
   """
