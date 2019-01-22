@@ -10,7 +10,7 @@ def DecimalToBinary(decimal):
   decimal: type string
   return: type string
   """
-  result_list= [ ]
+  result_list= [ ] #binary list
   
   remainder= int(number) % 2
   result_list. append(remainder)
