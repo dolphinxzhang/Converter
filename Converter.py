@@ -46,7 +46,7 @@ def BinaryToDecimal(binary):
 
     for i in range(len(number)):   #iterates through every position of the string
       if number[i] =='1': #if "1" is found on this position 
-        sum+=2**(i) #let 2 take the power of that "1"'s position and add up all the powers of 2 according to the postiion of "1" in the string  
+        sum = sum + 2**(i) #let 2 take the power of that "1"'s position and add up all the powers of 2 according to the postiion of "1" in the string  
       else: #if "0" is found
         pass #add nothing 
     
