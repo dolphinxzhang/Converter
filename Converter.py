@@ -45,7 +45,6 @@ def BinaryToDecimal(binary):
     
     pos1=0 #counter for the position of '1' in use input string
     sum=0
-    
 
     for i in range(len(number)):   #iterates through every position of the string
       if number[i] =='1': #if "1" is found on this position 
