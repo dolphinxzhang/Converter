@@ -10,20 +10,14 @@ def DecimalToBinary(decimal):
     
     result_list= [ ]
     
-    remainder= int(number) % 2
-    result_list. append(remainder)
-    quotient = int(number) / 2
+    decimal = int(number)
+    remainder= decimal % 2
+    result_list.append(remainder)
+    result = ''
     
-    while quotient != 0:
-        result_list. append(remainder)
-        quotient = quotient / 2
-        remainder = quotient % 2
-        
-    print result_list
-
-    result= ' '
-    for i in result_list:
-        result=str(i)+result
+    while decimal > 0:
+        for i in result_list:
+            result = str(decimal) + result
            
     return result
 
