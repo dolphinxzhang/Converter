@@ -1,12 +1,13 @@
 
 def DecimalToBinary(decimal):
-"""
+    """
     Converts a decimal number entered by user
     into the corresponding binary number.
 
     decimal: type string
 
-    return: type string """
+    return: type string 
+    """
     
   
         
@@ -35,7 +36,7 @@ def BinaryToDecimal(binary):
         else: #if "0" is found
             pass #add nothing 
     
-    results=str(sum) #return results in the form of a string 
+    results = str(sum) #return results in the form of a string 
         
     return results
 
@@ -44,7 +45,7 @@ def BinaryToDecimal(binary):
 
 
 if __name__ == '__main__':
-    """
+
     number = raw_input("Enter a decimal number to convert to Binary: ")
     binary = DecimalToBinary(number)
 
@@ -52,7 +53,6 @@ if __name__ == '__main__':
     print 'Entered Decimal: %s' % number
     print 'Binary: %s' % binary
     print
-    """
  
     number = raw_input("Enter a binary number to convert to Decimal: ")
     decimal = BinaryToDecimal(number)
