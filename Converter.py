@@ -7,26 +7,25 @@ def DecimalToBinary(decimal):
   decimal: type string
   return: type string
   """
-
-    
-    result_list= [ ]
-    
-    remainder= int(number) % 2
+  
+  result_list= [ ]
+  
+  remainder= int(number) % 2
+  result_list. append(remainder)
+  quotient = int(number) / 2
+  
+  while quotient != 0:
     result_list. append(remainder)
-    quotient = int(number) / 2
-    
-    while quotient != 0:
-        result_list. append(remainder)
-        quotient = quotient / 2
-        remainder = quotient % 2
-        
-    print result_list
-
-    result= ' '
-    for i in result_list:
-        result=str(i)+result
-           
-    return result
+    quotient = quotient / 2
+    remainder = quotient % 2
+  
+  print result_list
+  
+  result= ' '
+  for i in result_list:
+    result=str(i)+result
+  
+  return result
 
 
 
